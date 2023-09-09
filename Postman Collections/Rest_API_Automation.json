@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "956f846a-1ca3-4b8a-9bc0-229791b35db5",
+		"name": "SOAP-Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Addition",
+			"item": [
+				{
+					"name": "Add-Task-1-Calculator",
+					"_postman_id": "df059e9e-c6e7-4ede-b88f-1189da2a4a1a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Add-Task-2-Country",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2c64aa55-ee49-40e9-adf6-925988d620a0",
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Afghanistan\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "05b5d2ed-b3a6-47d1-a6fc-424a885e551e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "EMnAWe06ioGtouJs7gLYT9chK9-2jJ--7MKRXpI8FesmY_2Kp-d_7aCqff7M9moEJBvuXoBO4clKtY0v",
+								"username": "AUv8rrc_P-EbP2E0mpb49BV7rFt3Usr-vdUZO8VGOnjRehGHBXkSzchr37SYF2GNdQFYSp72jh5QUhzG"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soap12:Envelope xmlns:soap12=\"http://www.w3.org/2003/05/soap-envelope\">\r\n  <soap12:Body>\r\n    <ListOfCountryNamesByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n    </ListOfCountryNamesByName>\r\n  </soap12:Body>\r\n</soap12:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"
+					},
+					"response": []
+				},
+				{
+					"name": "Add-Task-3-AccessToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2c64aa55-ee49-40e9-adf6-925988d620a0",
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "a459af46-02d8-4f29-8594-26d6348beb31",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "EMnAWe06ioGtouJs7gLYT9chK9-2jJ--7MKRXpI8FesmY_2Kp-d_7aCqff7M9moEJBvuXoBO4clKtY0v",
+								"username": "AUv8rrc_P-EbP2E0mpb49BV7rFt3Usr-vdUZO8VGOnjRehGHBXkSzchr37SYF2GNdQFYSp72jh5QUhzG"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "x-www-form-urlencoded\r\nkey\r\ngrant_type \r\nvalue \r\nclient_credentials",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": "https://api-m.sandbox.paypal.com/v1/oauth2/token"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "dac6c99f-1047-4fff-9b63-754613f592ee"
+		},
+		{
+			"name": "Multiply",
+			"item": [],
+			"_postman_id": "ca679805-98ea-4fd6-9aec-e84f4fda926b"
+		}
+	]
+}
