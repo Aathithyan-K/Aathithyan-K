@@ -10,14 +10,43 @@
 			"item": [
 				{
 					"name": "Add-Task-1-Calculator",
-					"_postman_id": "df059e9e-c6e7-4ede-b88f-1189da2a4a1a",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f571cf5f-2f11-4cdb-835f-207075fab4ac",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "df059e9e-c6e7-4ede-b88f-1189da2a4a1a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": [],
-						"url": null
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n        <Add xmlns=\"http://tempuri.org/\">\r\n            <intA>20</intA>\r\n            <intB>20</intB>\r\n        </Add>\r\n    </soap:Body>\r\n</soap:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": "http://www.dneonline.com/calculator.asmx"
 					},
 					"response": []
 				},
@@ -37,7 +66,7 @@
 							}
 						}
 					],
-					"_postman_id": "05b5d2ed-b3a6-47d1-a6fc-424a885e551e",
+					"id": "05b5d2ed-b3a6-47d1-a6fc-424a885e551e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {
@@ -89,7 +118,7 @@
 							}
 						}
 					],
-					"_postman_id": "a459af46-02d8-4f29-8594-26d6348beb31",
+					"id": "a459af46-02d8-4f29-8594-26d6348beb31",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {
@@ -126,12 +155,12 @@
 					"response": []
 				}
 			],
-			"_postman_id": "dac6c99f-1047-4fff-9b63-754613f592ee"
+			"id": "dac6c99f-1047-4fff-9b63-754613f592ee"
 		},
 		{
 			"name": "Multiply",
 			"item": [],
-			"_postman_id": "ca679805-98ea-4fd6-9aec-e84f4fda926b"
+			"id": "ca679805-98ea-4fd6-9aec-e84f4fda926b"
 		}
 	]
 }
