@@ -139,14 +139,50 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "x-www-form-urlencoded\r\nkey\r\ngrant_type \r\nvalue \r\nclient_credentials",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "xml"
 								}
 							}
 						},
-						"url": "https://api-m.sandbox.paypal.com/v1/oauth2/token"
+						"url": {
+							"raw": "https://api-m.sandbox.paypal.com/v1/oauth2/token?x-www-form-urlencoded&key&grant_type&value&client_credentials",
+							"protocol": "https",
+							"host": [
+								"api-m",
+								"sandbox",
+								"paypal",
+								"com"
+							],
+							"path": [
+								"v1",
+								"oauth2",
+								"token"
+							],
+							"query": [
+								{
+									"key": "x-www-form-urlencoded",
+									"value": null
+								},
+								{
+									"key": "key",
+									"value": null
+								},
+								{
+									"key": "grant_type",
+									"value": null
+								},
+								{
+									"key": "value",
+									"value": null
+								},
+								{
+									"key": "client_credentials",
+									"value": null
+								}
+							]
+						}
 					},
 					"response": []
 				}
