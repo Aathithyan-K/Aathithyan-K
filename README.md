@@ -3,6 +3,9 @@
 - 👀 I’m currently looking for SDET Role
 - 💞️ I’m looking to collaborate on Automation Testing Projects.
 - 📫 How to reach me aathithyank82@gmail.com
+- 📄 Know about my experiences https://www.linkedin.com/in/aathithyan-k/
+
+
 
 <!---
 Aathithyan-K/Aathithyan-K is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
