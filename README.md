@@ -1,6 +1,6 @@
 # Aathithyan K
 
-![Profile Picture]([https://placekitten.com/200/200](https://drive.google.com/file/d/1cekPDrgwIOuDBMJc75fzOyqbHRqd77vA/view?usp=drive_link)) 
+![Profile Picture](https://drive.google.com/file/d/1cekPDrgwIOuDBMJc75fzOyqbHRqd77vA/view?usp=drive_link)
 
 [Email](mailto:aathithyank82@gmail.com) | [+91 6381258428](tel:+916381258428) | Tiruchirapalli, India 620003
 
