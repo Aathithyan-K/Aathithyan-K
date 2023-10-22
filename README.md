@@ -12,6 +12,7 @@ Dedicated Automation Tester with 6 months of experience in using Selenium WebDri
 
 ### Test Automation
 - Selenium WebDriver
+- REST-Assured
 - TestNG
 - Cucumber
 - Gherkin
@@ -36,6 +37,8 @@ Dedicated Automation Tester with 6 months of experience in using Selenium WebDri
 - Browser Developer Tools
 - Postman
 - Newman
+- Jenkins
+- GraphQL
 
 ### Build Tool
 - Maven
@@ -72,6 +75,9 @@ Dedicated Automation Tester with 6 months of experience in using Selenium WebDri
 - UI
 - UAT
 - API Testing
+
+## Documentation
+- Swagger
 
 ## Experience
 
