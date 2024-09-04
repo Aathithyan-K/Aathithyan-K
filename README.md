@@ -2,7 +2,7 @@
 
 ![Profile Picture](https://avatars.githubusercontent.com/u/140268822?s=400&u=ff356890056db5b876cc6298b1b7d0dcc16df788&v=4)
 
-[Email](mailto:aathithyank82@gmail.com) | [+91 6381258428](tel:+919342320071) | Tiruchirapalli, India 620003
+[Email](mailto:aathithyank82@gmail.com) | [+91 9342320071](tel:+919342320071) | Tiruchirapalli, India 620003
 
 ## Summary
 
